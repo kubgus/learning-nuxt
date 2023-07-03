@@ -5,7 +5,7 @@
             <Meta name="description" content="The list of all users" />
         </Head>
 
-        <div class="grid grid-cols-6 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <div v-for="u in users" :key="u.id">
                 <UserCard :user="u" />
             </div>
