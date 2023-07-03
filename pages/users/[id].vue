@@ -15,10 +15,10 @@
 </template>
 
 <script setup>
-    const { email } = useRoute().params;
-    const uri = "https://fakestoreapi.com/users/" + email;
+    const { id } = useRoute().params;
+    const uri = "https://fakestoreapi.com/users/" + id;
 
-    const { data: user } = await useFetch(uri, { key: email });
+    const { data: user } = await useFetch(uri, { key: id });
 
     const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 </script>

@@ -9,12 +9,7 @@
 </template>
 
 <script setup>
-    const { data: world } = await useFetch("/api/world?name=John", {
-        method: "post",
-        body: { age: 23 },
-    });
 
-    const { data: sqrt } = await useFetch("/api/sqrt/10");
 </script>
 
 <style scoped>

@@ -7,7 +7,6 @@
                 <ul class="ml-auto flex gap-8 font-medium">
                     <li><NuxtLink to="/">Home</NuxtLink></li>
                     <li><NuxtLink to="/about">About</NuxtLink></li>
-                    <li><NuxtLink to="/angry">Test</NuxtLink></li>
                     <li><NuxtLink to="/users" class="btn">Users</NuxtLink></li>
                 </ul>
             </nav>
