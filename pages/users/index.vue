@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid grid-cols-6 gap-5">
             <div v-for="u in users" :key="u.id">
-                <NuxtLink :to="`/users/${u.id}`">{{ u.email }}</NuxtLink>
+                <UserCard :user="u" />
             </div>
         </div>
     </div>
