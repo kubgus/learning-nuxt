@@ -2,7 +2,7 @@
     <div>
         <NuxtLoadingIndicator color="#fcc203" height="5" />
         <header class="shadow-md bg-back">
-            <nav class="container p-4 flex justify-between">
+            <nav class="p-4 flex justify-between">
                 <h1 class="text-xl font-bold">My cool website!</h1>
 
                 <ul class="ml-auto flex gap-8 font-medium">
@@ -14,7 +14,7 @@
         </header>
     </div>
 
-    <div class="container text-center p-4">
+    <div class="text-center p-4">
         <slot />
     </div>
 </template>
