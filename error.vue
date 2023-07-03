@@ -1,5 +1,10 @@
 <template>
     <div class="mt-7 p-5 max-w-sm mx-auto text-center">
+        <Head>
+            <Title>Your cool error page!</Title>
+            <Meta name="description" content="You've run into an error" />
+        </Head>
+
         <p class="text-7xl font-bold">{{ error.statusCode }}</p>
         <p class="mt-7 text-3xl">Ooops...</p>
         <p class="mt-7 text-xl">{{ error.message }}</p>
@@ -11,13 +16,6 @@
 </template>
 
 <script setup>
-    useHead({
-        title: "My cool error page!",
-        meta: [
-            { name:"description", content: "This is an error page" }
-        ]
-    });
-
     defineProps(["error"]);
 
     const handleClearError = () => clearError({ redirect: "/"});
