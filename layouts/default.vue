@@ -1,5 +1,6 @@
 <template>
     <div>
+        <NuxtLoadingIndicator color="#fcc203" height="5" />
         <header class="shadow-md bg-back">
             <nav class="container p-4 flex justify-between">
                 <h1 class="text-xl font-bold">My cool website!</h1>
