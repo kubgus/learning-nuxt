@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NuxtLoadingIndicator color="#fcc203" height="5" />
+        <NuxtLoadingIndicator color="#fcc203" :height="5" />
         <header class="shadow-md bg-back">
             <nav class="p-4 flex justify-between">
                 <h1 class="text-xl font-bold">My cool website!</h1>
@@ -23,8 +23,18 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style>
     .router-link-exact-active:not(.btn) {
         @apply text-test;
+    }
+
+    .page-enter-active,
+    .page-leave-active {
+        transition: all 0.4s;
+    }
+    .page-enter-from,
+    .page-leave-to {
+        opacity: 0;
+        filter: blur(1rem);
     }
 </style>

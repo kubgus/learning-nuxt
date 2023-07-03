@@ -23,6 +23,6 @@
     const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

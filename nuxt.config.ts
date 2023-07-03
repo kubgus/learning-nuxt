@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         },
       ],
     },
+    pageTransition: { name: "page", mode: "out-in" },
   },
   runtimeConfig: {
     apiKey: process.env.API_KEY,

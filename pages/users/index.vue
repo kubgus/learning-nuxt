@@ -17,6 +17,6 @@
     const { data: users } = await useFetch("https://fakestoreapi.com/users");
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
