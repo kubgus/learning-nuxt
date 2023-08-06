@@ -5,6 +5,7 @@
         <p>Give us $!</p>
         <p class="text-xl mt-2">{{ world }}</p>
         <p class="text-xl mt-2">{{ sqrt }}</p>
+        <a class="mt-2" href="https://github.com/kubgus/Learning-Nuxt3">Repo!</a>
     </div>
 </template>
 
